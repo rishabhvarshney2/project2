@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+* {
+    box-sizing: border-box;
+}
+h1 {
+    text-shadow: 2px 2px 5px black;
+}
+
+body {
+background-color:;
+  margin: 0;
+}
+.header{
+margin:auto;
+padding:20px;
+}
+.topnav {
+    overflow: hidden;
+    background-color: Brown;
+}
+
+.topnav a, .loginbtn {
+    float: left;
+    display: block;
+    color: #FFF8DC;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav a:hover{
+    background-color: red;
+    color: white;
+}
+h1{
+postion:relative;
+font-size: 100px;
+margin-left:300px;
+}
+img{
+postion:absolute;
+float:left;
+}
+div.b{
+  top: 350px;
+  left: 170px;
+  width:1500px;
+    text-align: center;
+    color: white;
+}
+
+
+.ab{
+margin-top:110px;
+margin-left:1320px;
+}
+
+.centered {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	color:black;
+	font-size:50px;
+	
+}
+#category{
+padding:10px 20px;
+font-size:20px;
+background-color:peachpuff;
+}
+#a{
+padding:10px 20px;
+font-size:20px;
+background-color:sky-blue;
+}
+</style>
+</head>
+<body>
+<div class="header">
+<img src="logo.jpg">
+<h1>PRAVAS</h1>
+</div>
+<div class="topnav">
+  <a href="index.html">Home</a>
+   <a href="admin.html">Admin</a>
+    <a href="add.html">Add House</a>
+    <a href="customer.html">Customer</a>
+	 <a href="About.html">About Us</a>
+  
+</div>
+<div class="b">
+<img src="house.jpg" width="1525" height="410">
+ <div class="centered">
+  <form action="testing.php" method="POST">
+   <select name="cate" id="category" onchange="javascript: dynamicdropdown(this.options[this.selectedIndex].value);" >
+	<option value=""> Select City</option>
+	<option value="Delhi">Delhi</option>
+	<option value="Mumbai">Mumbai</option>
+	<option value="Pune">Pune</option>
+	<option value="Mathura">Mathura</option>
+	<option value="Agra">Agra</option>
+	<option value="Aligarh">Aligarh</option>
+	<option value="Bangalore">Bangalore</option>
+	<option value="Chandigarh">Chandigarh</option>
+	<option value="Surat">Surat</option>
+	<option value="Jaipur">Jaipur</option>
+	</div>
+  <input id="a" type="submit" value="search"/>
+  </form>
+
+	
+</div>
+
+<marquee direction="left" style="color:red ;word-spacing: 20px;">All types of room for customer and landlord both are availabe here.For any queries contact +917351860454.</marquee>
+</body>
+</html>
+
